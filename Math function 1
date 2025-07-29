@@ -1,0 +1,11 @@
+import java.io.*;
+import java.util.*;
+import java.math.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in);
+        float a = scan.nextFloat();
+        int b = scan.nextInt(),c = scan.nextInt(),d = scan.nextInt();
+        System.out.println((int)Math.floor(a)+"\n"+(int)Math.ceil(a)+"\n"+(int)Math.sqrt(b)+"\n"+(int)Math.pow(c,d));
+    }
+}
