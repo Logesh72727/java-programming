@@ -1,0 +1,12 @@
+import java.io.*;
+import java.util.Scanner;
+import java.math.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        float b = scan.nextFloat();
+        System.out.printf("%d\n%.2f",a,b);
+    }
+}
