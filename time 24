@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int hour = scan.nextInt(), min = scan.nextInt(), sec = scan.nextInt();
+        min = min+sec/60;
+        hour = hour + min/60;
+        min = min%60;
+        sec = sec%60;
+        System.out.println("Total Number of hours is "+hour);
+        System.out.println("Total Number of minutes is "+min);
+        System.out.println("Total Number of seconds is "+sec);
+    }
+}
