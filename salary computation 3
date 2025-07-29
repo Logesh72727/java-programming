@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        float n = scan.nextInt();
+        if (n<15000){
+            System.out.printf("%.2f",n+(n*0.15)+(n*0.9));
+        }else{
+            System.out.printf("%.2f",n+50000+(n*0.98));
+        }
+    }
+}
