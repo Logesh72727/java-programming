@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int op = scan.nextInt();
+        if(op >= 3 || op <= 0){
+            System.out.println("Invalid Input");
+            return;
+        }int amt = scan.nextInt();
+        if(op==1){
+            System.out.println(n+amt);
+        }else{
+            if(n>=amt){
+                System.out.println(n-amt);
+            }else{
+                System.out.println("Insufficient Balance");
+            }
+        }
+        
+    }
+}
