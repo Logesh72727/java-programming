@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt(),pal=0,count=0;
+        int n1=n;
+        while(n>0){
+            pal*=10;
+            pal+=n%10;
+            n/=10;
+            count++;
+        }
+        if(count==3){
+            if(pal == n1){
+                System.out.println("palindrome");
+            }else{
+                System.out.println("not palindrome");
+            }
+        }else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
