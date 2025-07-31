@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan  = new Scanner(System.in);
+        int n = scan.nextInt(),result=0,count = 0;
+        while(n>0){
+            result+=n%10;
+            n/=10;
+            count++;
+        }
+        if(count>2)
+        System.out.println("Sum of digit is "+result);
+        else
+            System.out.println("Invalid Input");
+    }
+}
