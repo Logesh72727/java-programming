@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n=scan.nextInt(),n1,result = 0;
+        if(n>=100 && n<=999){
+            n1=n;
+            result += Math.pow(n%10,3);
+            result += Math.pow(n/100,3);
+            n/=10;
+            result += Math.pow(n%10,3);
+            if(result==n1){
+                System.out.println("Yes");
+            }else{
+                System.out.println("No");
+            }
+        }else{
+            System.out.println("No");
+        }
+    }
+}
