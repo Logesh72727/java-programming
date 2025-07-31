@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n=scan.nextInt(),m=scan.nextInt(),i=0,j=1,result=0,count=2;
+        if(n<20 && n>0 && m<20&& n<m && m>0){
+            while(count<m){
+                int temp = j;
+                j=i+j;
+                i=temp;
+                count++;
+                if(count>=n){
+                    result+=j;
+                }
+            }
+        System.out.printf("The Sum of Fibonacci value is %.1f",(float)result);
+        }else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
